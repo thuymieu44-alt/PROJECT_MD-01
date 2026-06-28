@@ -1,4 +1,3 @@
-// Lấy danh sách users
 let users = JSON.parse(localStorage.getItem("users")) || [];
 
 // Ẩn toàn bộ lỗi
