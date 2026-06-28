@@ -1,7 +1,4 @@
-// Lấy form
 const form = document.getElementById("add-new-user-form");
-
-// Lấy danh sách user từ localStorage
 let localUsers = JSON.parse(localStorage.getItem("users")) || [];
 
 // Ẩn toàn bộ lỗi
@@ -179,14 +176,14 @@ let eyeClose = document.querySelector(".fa-eye-slash");
 // Ẩn icon eye-slash lúc đầu
 eyeClose.style.display = "none";
 
-// Khi bấm icon con mắt → hiện mật khẩu
+// hiện mật khẩu
 eyeOpen.addEventListener("click", function () {
   passInput.type = "text";
   eyeOpen.style.display = "none";
   eyeClose.style.display = "inline";
 });
 
-// Khi bấm icon gạch chéo → ẩn mật khẩu
+//ẩn mật khẩu
 eyeClose.addEventListener("click", function () {
   passInput.type = "password";
   eyeClose.style.display = "none";
